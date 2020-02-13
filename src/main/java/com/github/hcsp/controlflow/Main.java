@@ -14,11 +14,11 @@ public class Main {
      */
     public static void printNarcissisticNumber() {
         for (int i = 100; i <= 999; i++) {
-            int ge =  i % 10;
-            int shi = i /10 %10;
+            int ge = i % 10;
+            int shi = i / 10 % 10;
             int bai = i / 100;
-            int num = (int) (Math.pow(ge,3)+Math.pow(shi,3)+Math.pow(bai,3));
-            if(num == i) System.out.println(i);
+            int num = (int) (Math.pow(ge, 3) + Math.pow(shi, 3) + Math.pow(bai, 3));
+            if (num == i) System.out.println(i);
         }
     }
 }
