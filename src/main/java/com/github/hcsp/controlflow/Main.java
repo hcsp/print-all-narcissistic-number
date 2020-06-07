@@ -12,18 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        for (int i = 100; i < 1000; i++) {
-            int unit = (i % 100) % 10;
-            int ten = (i / 10) % 10;
-            int hundred = i / 100;
-            if (cube(unit) + cube(ten) + cube(hundred) == i) {
-                System.out.println(i);
-            }
-        }
-    }
-
-    public static int cube(int x) {
-        return x * x * x;
-    }
+    public static void printNarcissisticNumber() {}
 }
