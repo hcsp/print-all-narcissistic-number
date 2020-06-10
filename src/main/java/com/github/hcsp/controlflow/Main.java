@@ -15,7 +15,7 @@ public class Main {
     public static void printNarcissisticNumber() {
         for (int i = 100; i < 1000; i++) {
             int hundredDigit = i / 100;
-            int tenDigit = (i% 100) / 10;
+            int tenDigit = (i % 100) / 10;
             int oneDigit = i % 10;
             if (i == Math.pow(hundredDigit, 3) + Math.pow(tenDigit, 3) + Math.pow(oneDigit, 3)) {
                 System.out.println(i);
