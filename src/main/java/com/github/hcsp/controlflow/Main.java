@@ -15,7 +15,8 @@ public class Main {
     public static void printNarcissisticNumber() {
         int x = 100;
         while (100 <= x && x < 1000) {
-            //百位 //个位
+
+            //百位x / 100 //十位x / 10 % 10 //个位x % 10
             if (x == ((x / 100) * (x / 100) * (x / 100)
                     + (x / 10 % 10) * (x / 10 % 10) * (x / 10 % 10)
                     + (x % 10) * (x % 10) * (x % 10))) {
