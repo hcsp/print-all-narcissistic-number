@@ -12,29 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static double p(double a) {
-        return Math.pow(a, 3);
-    }
-
-    public static void printNarcissisticNumber() {
-        int MIN_THREE_DIGITS = 100;
-        int MAX_THREE_DIGITS = 999;
-        String s = "";
-        for (int i = MIN_THREE_DIGITS; i < MAX_THREE_DIGITS; i++) {
-            // current i
-            // 因为位数是确定的 所以执行三次就行了
-            int current = i;
-
-            int digits = current % 10;
-            current /= 10;
-            int tens = current % 10;
-            current /= 10;
-            int hundredDigits = current;
-
-            if ((int) (p(digits) + p(tens) + p(hundredDigits)) == i) {
-                s += (i + ",");
-            }
-        }
-        System.out.println("s = " + s);
-    }
+    public static void printNarcissisticNumber() {}
 }
