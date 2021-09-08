@@ -15,9 +15,9 @@ public class Main {
     public static void printNarcissisticNumber() {
         for (int i = 100; i < 1000; i++) {
             int digit = i % 10;
-            int ten =  (i / 10) % 10;
+            int ten = (i / 10) % 10;
             int hundred = i / 100;
-            if(i == digit * digit * digit + ten * ten *ten + hundred * hundred * hundred){
+            if (i == digit * digit * digit + ten * ten * ten + hundred * hundred * hundred) {
                 System.out.println(i);
             }
 
