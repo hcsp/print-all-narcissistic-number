@@ -16,6 +16,7 @@ public class Main {
         int i = 100;
         int a, b, c;
         while (i <= 999) {
+
             a = i/100;
             b = i%100/10;
             c = i%10;
