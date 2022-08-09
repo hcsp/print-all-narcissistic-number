@@ -12,5 +12,23 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {}
+    public static void printNarcissisticNumber() {
+        for (int i = 100; i <= 999; i++) {
+            if (isNar(i)) {
+                System.out.println(i + " ");
+            }
+        }
+    }
+
+    private static boolean isNar(int num) {
+        int num1 = num / 100;
+        int num2 = (num - num1 * 100) / 10;
+        int num3 = num - num1 *100 - num2 * 10;
+        if (num1 * num1 * num1 + num2 * num2 * num2 + num3 * num3 * num3 == num) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
