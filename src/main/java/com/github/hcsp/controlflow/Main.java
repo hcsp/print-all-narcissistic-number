@@ -2,7 +2,6 @@ package com.github.hcsp.controlflow;
 
 public class Main {
     public static void main(String[] args) {
-
         printNarcissisticNumber();
     }
 
@@ -13,18 +12,5 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {
-        int a,b,c,d;
-        for (int i = 100; i < 1000; i++)
-        {
-            c = i % 100 % 10;
-            b = (i / 10) % 10;
-            a = i / 100;
-            d = a*100+b*10+c;
-            if(Math.pow(a,3)+Math.pow(b,3)+Math.pow(c,3)==a*100+b*10+c){
-                System.out.println(d);
-            }
-        }
-
-    }
+    public static void printNarcissisticNumber() {}
 }
