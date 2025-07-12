@@ -2,6 +2,7 @@ package com.github.hcsp.controlflow;
 
 public class Main {
     public static void main(String[] args) {
+        int number;
         printNarcissisticNumber();
     }
 
@@ -12,5 +13,15 @@ public class Main {
      *
      * <p>提示：可用除法和求余运算得到一个数字的个、十、百位上的数字。
      */
-    public static void printNarcissisticNumber() {}
+    public static void printNarcissisticNumber() {
+        for (int number = 100; number <=999;number ++){ //因为题目说了水仙花数是三位数,所以可以循环100-999的所有数字
+            int TheFirstDigit = number / 100;
+            int TheSecondDigit = (number / 10)%10;
+            int TheThirdDigit = number % 10;
+
+            if (TheFirstDigit*TheFirstDigit*TheFirstDigit + TheSecondDigit*TheSecondDigit*TheSecondDigit + TheThirdDigit*TheThirdDigit*TheThirdDigit == number){
+                System.out.println(number);
+            }
+        }
+        }
 }
